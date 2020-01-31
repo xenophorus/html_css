@@ -3,17 +3,15 @@ body {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     display: flex;
     flex-direction: column;
     background-color: #f8f8f8;
     font-family: sans-serif
-}
-
-.menu {
-    color: #ccc;
-    list-style-type: none;
-    font-size: 0.75em;
 }
 
 h2 {
@@ -98,6 +96,55 @@ input[type="text"] {
     font-size: 0.75em;
     flex-shrink: 0;
 }
+
+.menu {
+    color: #aaa;
+    list-style-type: none;
+    font-size: 0.75em;
+}
+
+.menu li {
+    width: 100px;
+    height: 20px;
+    list-style-type: none;
+    border: 1px solid #aaa;
+    text-align: center;
+}
+
+/*
+.menu li:nth-child(2n) {
+    background-color: #eee;
+}
+
+.menu li:nth-child(2n-1) a {
+    color: #444;
+}
+
+.menu li:nth-child(2n) a {
+    color: #777;
+}
+*/
+
+.menu li:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.menu li:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.menu li a:hover {
+    color: #55e;
+    
+}
+
+.menu li a:active {
+    color: lightgreen;
+}
+
 
 /*
 Решение на footer упер отсюда: https://css-tricks.com/couple-takes-sticky-footer/
