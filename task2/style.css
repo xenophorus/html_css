@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #f8f8f8;
-    font-family: sans-serif
+    font-family: sans-serif;
 }
 
 h2 {
@@ -35,14 +35,9 @@ h5 {
     color: #aaa;
 }
 
-.comm_list {
-    color: #080808;
-    list-style-type: none;
-
-}
-
-.cat_comm {
-    line-height: 1em;
+input,
+textarea {
+    text-transform: capitalize;
 }
 
 p {
@@ -52,8 +47,52 @@ p {
     font-size: 0.95em;
 }
 
+.comm_img {
+    border: 5px solid #ddd;
+}
+
+.comm_img:hover {
+    border: 5px solid #f8f8f8;
+}
+
 .header {
     text-decoration-line: none;
+    background-color: #eaeaea;
+}
+
+
+.comm_list {
+    color: #080808;
+    list-style-type: none;
+}
+
+.header img {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.header div {
+    margin-right: 10px;
+    float: left;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.cat_comm {
+    line-height: 1em;
+}
+
+.comm_descr {
+    border-collapse: collapse;
+}
+
+.comm_descr td {
+    border: 1px solid #ddd;
 }
 
 .charact {
@@ -71,6 +110,11 @@ p {
     text-align: left;
 }
 
+.descr:first-letter {
+    font-size: 3em;
+    color: darkcyan;
+}
+
 .price {
     color: #808080;
     font-weight: 500;
@@ -79,7 +123,7 @@ p {
 
 input[type="text"] {
     color: #541;
-    width: 50%;
+    width: 100%;
 
 }
 
@@ -109,8 +153,28 @@ input[type="text"] {
     list-style-type: none;
     border: 1px solid #aaa;
     text-align: center;
+
 }
 
+.menu ul {
+    padding-left: 0;
+    margin-left: 0
+}
+
+.megatable {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.megatable td {
+    border: 1px solid black;
+    width: 50px;
+    height: 30px;
+}
+
+.high {
+    height: 100px;
+}
 /*
 .menu li:nth-child(2n) {
     background-color: #eee;
@@ -138,13 +202,27 @@ input[type="text"] {
 
 .menu li a:hover {
     color: #55e;
-    
+
 }
 
 .menu li a:active {
     color: lightgreen;
 }
 
+.formCaption {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.formInput {
+    width: 300px;
+}
+
+.email:focus {
+    caret-color: yellow;
+    color: blue;
+    background-color: azure;
+}
 
 /*
 Решение на footer упер отсюда: https://css-tricks.com/couple-takes-sticky-footer/
