@@ -12,15 +12,33 @@ body {
     font-family: sans-serif;
 }
 
+.buy_btn {
+    color: #333;
+    width: 100px;
+    height: 30px;
+    background-color: #eaeaea;
+    position: absolute;
+    left: 760px;
+    top: 516px
+}
+
+.buy_btn:hover {
+    color: black;
+    background-color: #ccc;
+}
+
+.buy_btn:active {
+    color: aquamarine;
+}
+
 h2 {
-    color: #555;
-    font-size: 1.4em;
+    color: #665;
+    font-size: 1.3em;
 }
 
 h3 {
     color: #aaa;
     font-size: 1.2em;
-    margin-left: 20px;
 }
 
 h4 {
@@ -28,6 +46,7 @@ h4 {
     font-size: 18px;
     font-weight: 400;
     background: #eaeaea;
+    margin-top: 0;
 }
 
 h5 {
@@ -47,7 +66,6 @@ p {
 }
 
 
-
 .container {
     width: 800px;
     margin: 0 auto;
@@ -60,10 +78,17 @@ p {
 
 .header {
     text-decoration-line: none;
-    background-color: #cacaca;
+    background-image: url(./catalog/img/bg.jpg);
+    /*
+    background-color: #cacaca; */
     height: 120px;
     position: relative;
     padding-left: 20px;
+}
+
+.header h2 {
+    color: #ccc;
+    font-size: 1.3em;
 }
 
 .header_menu {
@@ -77,6 +102,33 @@ p {
 .comm_list {
     color: #080808;
     list-style-type: none;
+    border: 1px solid #eee;
+    width: 260px;
+    height: 300px;
+    float: left;
+    text-align: center;
+    margin: 2px;
+    background: white;
+}
+
+.comm_list a {
+    display: block;
+    width: 260px;
+    height: 300px;
+}
+
+.comm_list_img {
+    height: 150px;
+}
+
+.comm_list_name {
+    
+}
+
+.comm_list_img img {
+    height: 150px;
+    border: 0;
+    outline: 0;
 }
 
 .logo {
@@ -92,16 +144,51 @@ p {
     line-height: 1em;
 }
 
-.comm_name {
-    
-}
-
 .comm_img img {
-    border: 5px solid #ddd;
+    height: 300px;
+    overflow: hidden;
+    vertical-align: middle
 }
 
+/* outline: 5px solid #ddd; 
+}
+Выкинул изменение рамки по наведению. 
 .comm_img img:hover {
-    border: 5px solid #f8f8f8;
+    outline: 0;
+} */
+
+.comm_img {
+    width: 300px;
+    height: 300px;
+    outline: 1px solid lightgrey;
+    float: left;
+    position: relative;
+    text-align: center;
+    background: white
+}
+
+.comm_descr {
+    width: 450px;
+    height: 300px;
+    padding-left: 30px;
+    float: left;
+    margin-bottom: 30px
+}
+
+.comm_name {
+    width: 100%;
+    height: 100px;
+}
+
+
+.descr {
+    float: left;
+    width: 100%;
+}
+
+.price {
+    float: left;
+    width: 100%;
 }
 
 .comm_descr table {
@@ -182,7 +269,7 @@ input[type="text"] {
 
 .menu li {
     list-style-type: none;
-    background-color: #bbc;
+    background-color: #eaeaea;
     text-align: center;
     display: inline-block;
     outline: 1px solid #999;
@@ -205,11 +292,11 @@ input[type="text"] {
 }
 
 .menu li a:hover {
-    color: darkcyan;
+    color: black;
     width: 100px;
     text-align: center;
     display: inline-block;
-    background-color: #ccd;
+    background-color: #ccc;
 }
 
 .menu li a:active {
