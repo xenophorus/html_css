@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    min-width: 600px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+.header {
+    min-height: 200px;
+    background-color: darkcyan;
+}
+
+.nav {
+    width: 200px;
+    height: 300px;
+    background-color: darkblue;
+    float: left;
+}
+
+.content {
+    margin-left: 200px;
+    background-color: lawngreen;
+}
+
+.clr {
+    height: 200px;
+}
+
+.footer {
+    height: 200px;
+    background-color: #ccc;
+    margin-top: -200px;
+}
