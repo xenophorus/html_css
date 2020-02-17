@@ -10,85 +10,47 @@ body {
 p {
     font-family: 'Roboto Condensed', sans-serif;
 }
-
+/*
 div {
     outline: 1px solid green;
-}
-
-.clearfix:after {
-    content: '';
-    display: table;
-    clear: both;
-}
+}*/
 
 .container {
-    background-color: #aaa;
-    width: 1920px;
+    min-width: 970px;
+    max-width: 1920px;
+}
+
+.mainheader-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    height: 725px;
 }
 
 .mainheader {
-    width: 1920px;
     height: 725px;
-    background-color: black;
     background-image: url(img/head.jpg);
-}
-
-.header {
-    width: 1150px;
-    margin: 0 auto
-}
-
-.mainheadertext {
-    width: 1150px;
-    margin: 0 auto
-}
-
-.about {}
-
-.services {
-    width: 1150px;
-    margin: 0 auto
-}
-
-.testimonial {
-    width: 1150px;
-    margin: 0 auto
-}
-
-.news {
-    width: 1150px;
-    margin: 0 auto
-}
-
-.team {
-    width: 1150px;
-    margin: 0 auto
-}
-
-.subscribe {
-    width: 1150px;
-    margin: 0 auto
-}
-
-.contact {
-    width: 1150px;
-    margin: 0 auto
-}
-
-.footer {
-    width: 1150px;
-    margin: 0 auto
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .header_line {
     background-image: url(img/head_rect.svg);
-    background-color: #000000;
-    opacity: 0.5;
-    width: 1920px;
     height: 83px;
-    margin-top: 13px;
-    float: left;
+    top: 13px;
     position: relative;
+}
+
+.content {
+    position: relative;
+    width: 970px;
+    margin: 0 auto;
+
+}
+
+.mainheadertext {
+    width: 970px;
+    margin: 0 auto;
 }
 
 .caption {
@@ -129,16 +91,13 @@ div {
     line-height: 22.36px;
     letter-spacing: 0.36px;
     font-family: 'Roboto Condensed', sans-serif;
-    display: block;
-    vertical-align: middle;
-    top: 28px;
+    top: 30px;
+    left: 330px;
     position: absolute;
-    left: 800px;
+    vertical-align: middle;
 }
 
-.hphone {
-    vertical-align: middle;
-}
+
 
 .header_line img {
     vertical-align: middle;
@@ -159,17 +118,18 @@ div {
     display: block;
     vertical-align: middle;
     top: 30px;
+    left: 495px;
     position: absolute;
-    left: 970px;
+    vertical-align: middle;
 }
 
 .hsearch-box {
     width: 210px;
     height: 40px;
     float: left;
-    top: 21px;
-    position: relative;
-    left: 730px;
+    top: 23px;
+    left: 763px;
+    position: absolute;
 }
 
 .hsearch {
@@ -190,20 +150,44 @@ div {
     outline: 1px solid white;
     background-color: rgba(255, 255, 255, 0.0);
     vertical-align: middle;
+    position: absolute;
+    z-index: 1;
+}
+
+.hsearch_btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .hsearch-box img {
-    position: absolute;
     left: 175px;
     top: 10px;
-    display: block;
+    position: absolute;
 }
 
+.hmenu {
+    clear: both;
+}
 
 .menu {
+    list-style-type: none;
+    position: absolute;
+    width: 511px;
+    height: 16px;
+    color: #000000;
+    font-family: "Roboto Condensed";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.36px;
+    top: 128px;
+}
+
+.menu li {
     display: inline-block;
 }
 
-.hmenuitem {
-    list-style-type: none;
+.hmenuitem {}
+
+.mainheadertext {
+
+    position: relative;
 }
