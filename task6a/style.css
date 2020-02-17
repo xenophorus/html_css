@@ -10,21 +10,34 @@ body {
 p {
     font-family: 'Roboto Condensed', sans-serif;
 }
-/*
+
+a {
+    text-decoration: none;
+}
+
 div {
-    outline: 1px solid green;
-}*/
+    /*
+    outline: 1px solid green;*/
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .container {
     min-width: 970px;
     max-width: 1920px;
+    margin: 0 auto;
 }
 
 .mainheader-overlay {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    position: fixed;
+    background-color: rgba(20, 0, 0, 0.4);
+    background-position: center;
     height: 725px;
+    width: 1920px;
 }
 
 .mainheader {
@@ -41,11 +54,16 @@ div {
     position: relative;
 }
 
+.menuline {
+    position: relative;
+    top: 159px;
+    size: 1px;
+}
+
 .content {
     position: relative;
     width: 970px;
     margin: 0 auto;
-
 }
 
 .mainheadertext {
@@ -97,8 +115,6 @@ div {
     vertical-align: middle;
 }
 
-
-
 .header_line img {
     vertical-align: middle;
     margin-right: 10px;
@@ -141,6 +157,7 @@ div {
     vertical-align: middle;
     color: rgba(255, 255, 255, 1.0);
     top: 20px;
+    padding: 10px;
 }
 
 .hsearch_btn {
@@ -164,30 +181,125 @@ div {
     position: absolute;
 }
 
-.hmenu {
-    clear: both;
-}
+.hmenu {}
 
 .menu {
     list-style-type: none;
     position: absolute;
-    width: 511px;
     height: 16px;
-    color: #000000;
     font-family: "Roboto Condensed";
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 22.36px;
-    top: 128px;
+    top: 85px;
+    left: 225px;
+    letter-spacing: 0.36px;
 }
 
-.menu li {
+.menu .hmenuitem {
     display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.hmenuitem {}
+.hmenulink {
+    color: black;
+    display: block;
+}
+
+.menu .current {
+    color: white;
+    border-bottom: 3px solid white;
+    padding: 25px 11px;
+}
 
 .mainheadertext {
-
     position: relative;
+    top: 230px;
+}
+
+.small_slogan {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0.18px;
+    border-bottom: 3px solid white;
+    position: absolute;
+    left: 430px;
+}
+
+.big_slogan {
+    display: block;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0.6px;
+    position: absolute;
+    left: 195px;
+    top: 120px;
+}
+
+.oth_logos {
+    position: absolute;
+    top: 250px;
+    left: 380px;
+}
+
+.oth_logo {
+    float: left;
+    background-image: url(img/round.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: 6px;
+}
+
+.fb {
+    top: 0;
+    left: 0;
+    padding-left: 4px;
+}
+
+.tw {
+    top: 0;
+    left: 47px;
+    padding-left: 1px;
+}
+
+.rss {
+    top: 0;
+    left: 94px;
+    padding-left: 3px;
+}
+
+.vk {
+    top: 0;
+    left: 141px;
+    padding-top: 2px;
+}
+
+.oth_logo img {
+    margin: 13px 11px;
+}
+
+.about {
+}
+.services {
+}
+.testimonial {
+}
+.news {
+}
+.team {
+}
+.subscribe {
+}
+.contact {
+}
+.footer {
 }
