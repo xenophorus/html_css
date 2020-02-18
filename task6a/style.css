@@ -20,6 +20,16 @@ div {
     outline: 1px solid green;*/
 }
 
+h3 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    /* Text style for "Repreh Qui" */
+    letter-spacing: 0.16px;
+
+}
+
 .clearfix {
     content: "";
     display: table;
@@ -63,7 +73,7 @@ div {
     size: 1px;
 }
 
-.content {
+.content0 {
     position: relative;
     width: 970px;
     margin: 0 auto;
@@ -290,14 +300,79 @@ div {
     margin: 13px 11px;
 }
 
+.content {
+    position: relative;
+    width: 970px;
+    margin: 0 auto;
+    padding: 90px 0px;
+}
+
 .about {
     height: 500px;
 }
+
+.about_img {
+    float: right;
+}
+
+.texthead2 {
+    color: #f44336;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 35px;
+}
+
+.textfield {
+    color: #999999;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.12px;
+    width: 400px;
+}
+
 
 .services {
     height: 762px;
     background-color: #f7f7f7;
 }
+
+.servleft {
+    float: right;
+}
+
+.servright {
+    
+}
+
+.servtext,
+.servtext2 {
+    width: 450px;
+    height: 102px;
+}
+
+
+
+.serv_img,
+.serv_img2 {
+    background-image: url(img/ellips2.svg);
+    float: left;
+    position: relative;
+    width: 102px;
+    height: 102px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.serv_img {
+    float: right;
+}
+
+.serv_img2 {
+    float: left;
+}
+
 
 .gallery {
     height: 890px;
