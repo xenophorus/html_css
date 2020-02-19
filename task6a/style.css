@@ -320,39 +320,80 @@ h3 {
     font-size: 36px;
     font-weight: 500;
     line-height: 36px;
+    margin-bottom: 90px;
+}
+
+.about .texthead2 {
     margin-bottom: 35px;
 }
 
-.textfield {
+.texthead3r,
+.texthead3l {
+    width: 280px;
+    text-align: right;
+    height: 18px;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+    margin-bottom: 18px;
+}
+
+.texthead3r {
+    text-align: left;
+    margin-left: auto;
+}
+
+.servpic {
+    padding-top: 40px;
+}
+
+.servpicl {
+    padding-top: 35px;
+}
+
+.textfield,
+.textfield2 {
     color: #999999;
     font-size: 12px;
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 0.12px;
-    width: 400px;
+    width: 280px;
+    text-align: right;
 }
 
+.active {
+    color: #f44336;
+}
+
+.textfield2 {
+    margin-left: auto;
+    text-align: left
+}
 
 .services {
     height: 762px;
+    text-align: center;
     background-color: #f7f7f7;
-}
-
-.servleft {
-    float: right;
-}
-
-.servright {
-    
 }
 
 .servtext,
 .servtext2 {
-    width: 450px;
+    width: 440px;
     height: 102px;
+    margin-bottom: 70px;
 }
 
+.servtext {
+    margin-right: 45px;
+}
 
+.servtext2 {
+    margin-left: 45px;
+}
 
 .serv_img,
 .serv_img2 {
@@ -363,6 +404,26 @@ h3 {
     height: 102px;
     margin: 0 auto;
     text-align: center;
+}
+
+.imgactive {
+    background-image: url(img/ellips1.svg);
+    float: left;
+    position: relative;
+    width: 102px;
+    height: 102px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.serv_left {
+    float: left;
+    text-align: right;
+}
+
+.serv_right {
+    float: right;
+    text-align: left;
 }
 
 .serv_img {
@@ -376,6 +437,36 @@ h3 {
 
 .gallery {
     height: 890px;
+    text-align: center;
+}
+
+.gallery .content {
+    width: 1170px;
+}
+
+.galgame {
+    float: left;
+    width: 270px;
+    height: 480px;
+    background-color: #f7f7f7;
+    margin: 0px 11px;
+    position: relative
+}
+
+.cptl {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.redbutton {
+    width: 130px;
+    height: 30px;
+    background-color: #f44336;
+    position: absolute;
+    top: 438px;
+    left: 70px;
+    color: white;
+    border:
 }
 
 .testimonial {
@@ -383,11 +474,165 @@ h3 {
     background-image: url(/img/testim_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
 }
+
+.testimonial .content {
+    padding: 0;
+    position: relative;
+    width: 1170px;
+
+}
+
+.t_texthead2 {
+    width: 277px;
+    height: 39px;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 48px;
+    position: absolute;
+    top: 90px;
+    left: 420px;
+}
+
+.rectwhl {
+    position: absolute;
+    left: 0px;
+    top: 312px;
+}
+
+.rectwhr {
+    position: absolute;
+    right: 0px;
+    top: 312px;
+}
+
+.larrow,
+.rarrow {
+    width: 11px;
+    height: 17px;
+    color: #ffffff;
+    font-family: "Font Awesome";
+    font-size: 30px;
+    font-weight: 400;
+    display: block;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+}
+
+.larrow {
+    left: 0px;
+    top: 314px;
+}
+
+.rarrow {
+    right: 0px;
+    top: 314px;
+}
+
+.quote {
+    position: absolute;
+    top: 215px;
+    left: 545px;
+}
+
+.testim_text {
+    width: 935px;
+    height: 136px;
+    color: #ffffff;
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    font-weight: 300;
+    top: 300px;
+    left: 115px;
+    margin: auto;
+    position: absolute;
+    line-height: 1.8
+}
+
 
 .news {
     height: 888px;
 }
+
+.news .content {
+    width: 1170px;
+}
+
+.latest_news,
+.fevents {
+    width: 570px;
+    border: 1px solid red;
+}
+
+.latest_news {
+    float: left;
+}
+
+.fevents {
+    float: right;
+}
+
+.newsblock {
+    height: 140px;
+}
+
+.date {
+    height: 140px;
+    width: 100px;
+    background-image: url(/img/news_rect.svg);
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 21px;
+    text-align: center;
+
+}
+
+.text {
+    width: 310px;
+    padding-top: 24px;
+    padding-left: 67px;
+}
+
+.nday {
+    width: 29px;
+    height: 24px;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: center;
+    margin: auto;
+    margin-top: 28px;
+}
+
+.nmonth {
+    width: 34px;
+    height: 12px;
+    color: #9e9e9e;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 48px;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.nyear {
+    width: 28px;
+    height: 11px;
+    color: #9e9e9e;
+    font-family: "Poppins - Medium Italic";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 48px;
+    margin: auto;
+    margin-top: 8px;
+}
+
 
 .team {
     height: 785px;
